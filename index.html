@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Your Name — Portfolio</title>
+  <meta name="description" content="Robotics, embedded systems, and simulation projects." />
+  <style>
+    :root { --bg:#0b0f17; --card:#111827; --text:#e5e7eb; --muted:#9ca3af; --accent:#60a5fa; }
+    *{box-sizing:border-box} body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial;
+      background:linear-gradient(180deg,#070a10, #0b0f17); color:var(--text);}
+    a{color:inherit;text-decoration:none}
+    .wrap{max-width:980px;margin:0 auto;padding:28px 18px 60px}
+    .top{display:flex;gap:18px;align-items:flex-start;justify-content:space-between;flex-wrap:wrap}
+    h1{font-size:34px;line-height:1.1;margin:0}
+    .tag{color:var(--muted);margin-top:10px;max-width:64ch}
+    .btns{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px}
+    .btn{background:transparent;border:1px solid rgba(229,231,235,.18);padding:10px 12px;border-radius:12px}
+    .btn.primary{border-color:rgba(96,165,250,.6);background:rgba(96,165,250,.12)}
+    .section{margin-top:34px}
+    .section h2{margin:0 0 12px 0;font-size:18px;color:var(--muted);letter-spacing:.08em;text-transform:uppercase}
+    .grid{display:grid;grid-template-columns:repeat(12,1fr);gap:12px}
+    .card{grid-column:span 12;background:rgba(17,24,39,.72);border:1px solid rgba(229,231,235,.10);
+      border-radius:16px;padding:14px}
+    @media (min-width: 820px){ .card{grid-column:span 6} }
+    .card h3{margin:0 0 6px 0;font-size:18px}
+    .card p{margin:0 0 10px 0;color:var(--muted)}
+    ul{margin:0;padding-left:18px}
+    li{margin:6px 0}
+    .links{display:flex;gap:10px;flex-wrap:wrap;margin-top:10px}
+    .pill{font-size:13px;color:var(--muted);border:1px solid rgba(229,231,235,.12);padding:6px 10px;border-radius:999px}
+    .row{display:flex;gap:10px;flex-wrap:wrap}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="top">
+      <div>
+        <h1>Your Name</h1>
+        <div class="tag">Student builder working on robotics, embedded systems, and C++ simulations. This site links to demos + code.</div>
+        <div class="btns">
+          <a class="btn primary" href="https://github.com/guzziflipflops" target="_blank" rel="noreferrer">GitHub</a>
+          <a class="btn" href="mailto:YOUR_EMAIL">Email</a>
+          <a class="btn" href="YOUR_DEMO_LINK" target="_blank" rel="noreferrer">Demos</a>
+        </div>
+      </div>
+      <div class="row">
+        <span class="pill">C++</span><span class="pill">ESP32</span><span class="pill">Arduino</span>
+        <span class="pill">Embedded</span><span class="pill">Robotics</span>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Featured Projects</h2>
+      <div id="projects" class="grid"></div>
+    </div>
+
+    <div class="section">
+      <h2>Achievements</h2>
+      <div class="card">
+        <ul>
+          <li><b>PLACEHOLDER:</b> Add only items you can verify (award link, certificate, event page, demo video).</li>
+          <li><b>Rule:</b> If it can’t be backed by evidence, label it “In progress” or remove it.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Contact</h2>
+      <div class="card">
+        <div class="row">
+          <a class="btn primary" href="mailto:YOUR_EMAIL">YOUR_EMAIL</a>
+          <a class="btn" href="https://github.com/guzziflipflops" target="_blank" rel="noreferrer">github.com/guzziflipflops</a>
+          <a class="btn" href="YOUR_LINKEDIN" target="_blank" rel="noreferrer">LinkedIn</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const projects = [
+      {
+        title: "Autonomous Electric Scooter (in progress)",
+        subtitle: "Real-world platform for sensing + control experiments (PLACEHOLDER RESULTS).",
+        bullets: [
+          "What: Prototype concepts for assisted navigation and safety logic.",
+          "How: Controller + sensors + actuator integration (details TBD).",
+          "Evidence: Add demo video + wiring/control block diagram (TBD).",
+          "Result: TBD (latency, stability, safe test conditions)."
+        ],
+        links: [
+          { label: "Repo (TBD)", href: "#" },
+          { label: "Demo (TBD)", href: "#" },
+          { label: "Writeup (TBD)", href: "#" }
+        ]
+      },
+      {
+        title: "Drone Build (lift + video feed)",
+        subtitle: "Custom build integrating power, control, and video constraints.",
+        bullets: [
+          "What: School build designed to lift objects + provide video feed.",
+          "How: 4 motors/ESCs, 3D-printed frame, ESP32-based components (details TBD).",
+          "Evidence: Add flight footage + weight/payload test photos (TBD).",
+          "Result: TBD (flight time, payload, stability)."
+        ],
+        links: [
+          { label: "Repo (TBD)", href: "#" },
+          { label: "Build Log (TBD)", href: "#" }
+        ]
+      },
+      {
+        title: "ESP32 Embedded Projects",
+        subtitle: "Collection of small embedded experiments + demos (PLACEHOLDER LINKS).",
+        bullets: [
+          "Includes: TFT display work, USB/HID experiments, LED/lighting control concepts (TBD list).",
+          "Focus: Minimal reproducible examples + documentation.",
+          "Result: TBD (latency, range, reliability)."
+        ],
+        links: [
+          { label: "GitHub", href: "https://github.com/guzziflipflops" }
+        ]
+      },
+      {
+        title: "Diode-based RNG (hardware noise)",
+        subtitle: "Entropy source exploration + sampling/validation (TBD).",
+        bullets: [
+          "What: Noise-based entropy source with ADC sampling (details TBD).",
+          "How: Analog front-end → sampling → post-processing (TBD).",
+          "Result: TBD (bias checks, autocorrelation, simple stats)."
+        ],
+        links: [
+          { label: "Repo (TBD)", href: "#" },
+          { label: "Writeup (TBD)", href: "#" }
+        ]
+      },
+      {
+        title: "C++ Simulations",
+        subtitle: "Simulation tools to test ideas before hardware runs (TBD).",
+        bullets: [
+          "What: Simulations for robotics/physics/algorithms (pick 2–3 to feature).",
+          "How: Deterministic models + logs/visual outputs (TBD).",
+          "Result: TBD (what decisions the sim helped you make)."
+        ],
+        links: [
+          { label: "Repo (TBD)", href: "#" },
+          { label: "Screens (TBD)", href: "#" }
+        ]
+      }
+    ];
+
+    const root = document.getElementById("projects");
+    root.innerHTML = projects.map(p => `
+      <div class="card">
+        <h3>${p.title}</h3>
+        <p>${p.subtitle}</p>
+        <ul>${p.bullets.map(b => `<li>${b}</li>`).join("")}</ul>
+        <div class="links">
+          ${p.links.map(l => `<a class="btn" href="${l.href}" target="_blank" rel="noreferrer">${l.label}</a>`).join("")}
+        </div>
+      </div>
+    `).join("");
+  </script>
+</body>
+</html>
