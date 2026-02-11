@@ -55,6 +55,16 @@ const initCarousel = (track) => {
   const nextBtn = document.querySelector("[data-carousel-next]");
   if (!prevBtn || !nextBtn) return;
 
+  const updateNavState = () => {
+    const maxScroll = track.scrollWidth - track.clientWidth;
+    const atStart = track.scrollLeft <= 1;
+    const atEnd = track.scrollLeft >= maxScroll - 1;
+    prevBtn.disabled = atStart;
+    nextBtn.disabled = atEnd;
+    prevBtn.setAttribute("aria-disabled", String(atStart));
+    nextBtn.setAttribute("aria-disabled", String(atEnd));
+  };
+
   const getGap = () => {
     const styles = window.getComputedStyle(track);
     return Number.parseFloat(styles.columnGap || styles.gap || "0");
@@ -71,10 +81,14 @@ const initCarousel = (track) => {
       left: direction * getStep(),
       behavior: prefersReducedMotion ? "auto" : "smooth"
     });
+    window.setTimeout(updateNavState, 120);
   };
 
   prevBtn.addEventListener("click", () => scrollByStep(-1));
   nextBtn.addEventListener("click", () => scrollByStep(1));
+  track.addEventListener("scroll", () => window.requestAnimationFrame(updateNavState));
+  window.addEventListener("resize", updateNavState);
+  updateNavState();
 
   track.addEventListener("keydown", (event) => {
     if (event.key === "ArrowLeft") {
