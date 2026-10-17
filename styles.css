@@ -1,0 +1,40 @@
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  color: #222;
+  background: #fff;
+  font: 16px/1.55 system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+a { color: #0645ad; text-decoration: underline; text-underline-offset: 2px; }
+a:visited { color: #5a3696; }
+a:focus-visible { outline: 2px solid #222; outline-offset: 3px; }
+.wrap { width: min(100% - 2rem, 900px); margin-inline: auto; }
+.page-header { padding: 1.5rem 0 1rem; border-bottom: 1px solid #ddd; }
+h1 { margin: 0; font-size: 1.65rem; line-height: 1.25; }
+.subtitle { margin: .15rem 0 .5rem; font-weight: 600; }
+.intro { margin: 0 0 .75rem; }
+nav { display: flex; flex-wrap: wrap; gap: .35rem 1rem; }
+main > section { padding: 1.35rem 0; border-bottom: 1px solid #ddd; }
+h2 { margin: 0 0 .65rem; font-size: 1.3rem; }
+h3 { margin: 0 0 .35rem; font-size: 1.05rem; }
+h4 { margin: .9rem 0 .3rem; font-size: 1rem; }
+p { margin: .35rem 0 .65rem; }
+.entry { padding: .9rem 0; border-top: 1px solid #e2e2e2; }
+.entry:first-of-type { border-top: 0; padding-top: .2rem; }
+.evidence-list, .repo-list { margin: .35rem 0 .7rem; padding-left: 1.25rem; }
+.evidence-list li, .repo-list li { margin: .25rem 0; }
+.links { margin-top: .45rem; }
+.placeholder { font-weight: 650; }
+figure { margin: .85rem 0 .5rem; }
+figure img { display: block; width: 100%; max-width: 500px; height: auto; border: 1px solid #ccc; }
+figcaption { max-width: 700px; margin-top: .3rem; font-size: .92rem; }
+.page-footer { padding: 1rem 0 1.5rem; color: #555; font-size: .92rem; }
+.page-footer p { margin: .25rem 0; }
+@media (max-width: 600px) {
+  .wrap { width: min(100% - 1.25rem, 900px); }
+  .page-header { padding-top: 1.15rem; }
+  nav { gap: .3rem .8rem; }
+  main > section { padding: 1.1rem 0; }
+  .entry { padding: .8rem 0; }
+  figure img { max-width: 100%; }
+}

@@ -1,27 +1,16 @@
-﻿# Portfolio Site (GitHub Pages)
+# Robotics & Programming Project Evidence
 
-Static, no-build portfolio template designed for GitHub Pages. Edit placeholders in the HTML and in `assets/projects.js`.
+A plain static evidence page for robotics and software projects. It uses only `index.html` and `styles.css`; there is no build step or JavaScript.
 
-## File Structure
+## Updating the page
 
-- `index.html`
-- `projects.html`
-- `topics.html`
-- `contact.html`
-- `assets/style.css`
-- `assets/projects.js`
-- `assets/main.js`
+- Replace bracketed placeholders in `index.html` only when you have evidence to add.
+- Keep source links beside the claims they support.
+- Add confirmed repositories at the HTML comment near the end of the Code / GitHub section.
+- Keep self-reported roles and results labeled as such until supporting evidence is linked.
 
-## Deploy to GitHub Pages (GuzziFlipFlops.github.io)
+The previous site files are preserved under `archive/`. The root page is the active site.
 
-1. Create a public repo named `GuzziFlipFlops.github.io`.
-2. Add these files to the repo root.
-3. Push to the `main` branch.
-4. In GitHub repo settings, go to Pages and set the source to `main` and root (`/`).
-5. Your site will be available at `https://GuzziFlipFlops.github.io`.
+## Hosting
 
-## Update Content
-
-- Update your name, slogan, and email in the HTML files as needed.
-- Edit `assets/projects.js` to update projects, links, and tags.
-- The current content is sample data; replace with real details when ready.
+The site is static and keeps its stylesheet link relative, so it works from a GitHub Pages project path such as `/portfolio/` and from a Vercel project root. For Vercel, use the **Other** framework preset, leave the build command blank, and serve the project root (`.`). No package install or build step is needed.
