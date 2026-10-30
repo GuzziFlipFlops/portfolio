@@ -3,8 +3,7 @@ const panels = [...document.querySelectorAll('[role="tabpanel"]')];
 const aliases = {
   teams: 'frc-team-365',
   projects: 'garden-rover',
-  software: 'ios-accessibility',
-  code: 'code-github'
+  software: 'ios-accessibility'
 };
 
 function activateTab(tab, { focus = false, updateUrl = true } = {}) {

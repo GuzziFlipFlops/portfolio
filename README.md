@@ -6,7 +6,7 @@ A static evidence page for robotics and software achievements supporting the NCW
 
 - Replace bracketed placeholders in index.html only when you have evidence to add.
 - Keep source links beside the claims they support.
-- Add confirmed repositories at the HTML comment near the end of the Code / GitHub panel.
+- Add confirmed repositories beside the matching achievement. The full-width GitHub link above the tabs opens the owner's profile.
 - Keep self-reported roles and results labeled as such until supporting evidence is linked.
 - For another achievement, add a tab button and its matching panel. Match aria-controls to the panel ID and aria-labelledby to the button ID.
 
