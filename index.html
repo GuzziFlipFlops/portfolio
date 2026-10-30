@@ -3,31 +3,42 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Public links and supporting material for Aditya Verma's robotics and programming work.">
-  <title>Aditya Verma — Robotics &amp; Programming Evidence</title>
+  <meta name="description" content="This website is to showcase and provide evidence of my knowledge in computing for the AiC NCWIT awards application">
+  <title>This website is to showcase and provide evidence of my knowledge in computing for the AiC NCWIT awards application</title>
   <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
-  <header class="page-header">
-    <div class="wrap">
-      <h1>Aditya Verma</h1>
-      <p class="subtitle">Robotics &amp; Programming Project Evidence</p>
-      <p class="intro">Links and supporting material for my robotics, programming, and autonomous-systems work.</p>
-      <nav aria-label="Page sections">
-        <a href="#teams">Robotics teams</a>
-        <a href="#projects">Projects</a>
-        <a href="#software">Other software</a>
-        <a href="#code">Code / GitHub</a>
-      </nav>
-    </div>
+  <a class="skip-link" href="#achievements-heading">Skip to achievements</a>
+  <header class="page-header wrap">
+    <p class="name">Aditya Verma</p>
+    <h1>This website is to showcase and provide evidence of my knowledge in computing for the AiC NCWIT awards application</h1>
+    <p class="subtitle">Click on any tab for any one of my achievements, and you will be provided with evidence for that achievement, alongside any github repos or demo videos of such achievement.</p>
   </header>
 
   <main class="wrap">
-    <section id="teams" aria-labelledby="teams-title">
-      <h2 id="teams-title">Robotics teams</h2>
+    <div class="chooser">
+      <h2 id="achievements-heading" tabindex="-1">Achievements &amp; projects</h2>
+      <nav class="achievement-tabs" role="tablist" aria-label="Achievements and project evidence">
+        <button type="button" class="achievement-tab" role="tab" id="tab-frc-team-365" aria-controls="frc-team-365" aria-selected="true" tabindex="0">FIRST Team 365</button>
+        <button type="button" class="achievement-tab" role="tab" id="tab-vex-team-19709v" aria-controls="vex-team-19709v" aria-selected="false" tabindex="-1">VEX Team 19709V</button>
+        <button type="button" class="achievement-tab" role="tab" id="tab-garden-rover" aria-controls="garden-rover" aria-selected="false" tabindex="-1">Autonomous Garden Rover</button>
+        <button type="button" class="achievement-tab" role="tab" id="tab-soil-health-robot" aria-controls="soil-health-robot" aria-selected="false" tabindex="-1">Soil Health Robot</button>
+        <button type="button" class="achievement-tab" role="tab" id="tab-fpv-drone" aria-controls="fpv-drone" aria-selected="false" tabindex="-1">FPV Claw Drone</button>
+        <button type="button" class="achievement-tab" role="tab" id="tab-bipedal-robot" aria-controls="bipedal-robot" aria-selected="false" tabindex="-1">Bipedal Robot</button>
+        <button type="button" class="achievement-tab" role="tab" id="tab-humanoid-learning" aria-controls="humanoid-learning" aria-selected="false" tabindex="-1">Humanoid Reinforcement Learning</button>
+        <button type="button" class="achievement-tab" role="tab" id="tab-ios-accessibility" aria-controls="ios-accessibility" aria-selected="false" tabindex="-1">iOS Accessibility App</button>
+        <button type="button" class="achievement-tab" role="tab" id="tab-unity-game" aria-controls="unity-game" aria-selected="false" tabindex="-1">Unity Game / TSA</button>
+        <button type="button" class="achievement-tab" role="tab" id="tab-swift-challenge" aria-controls="swift-challenge" aria-selected="false" tabindex="-1">Swift Student Challenge</button>
+        <button type="button" class="achievement-tab" role="tab" id="tab-code-github" aria-controls="code-github" aria-selected="false" tabindex="-1">Code / GitHub</button>
+      </nav>
+      <noscript><p>JavaScript is off. All achievement evidence is listed below.</p></noscript>
+    </div>
 
-      <article class="entry">
-        <h3>FIRST Robotics Competition — Team 365</h3>
+    <div class="evidence-content" id="evidence">
+      <a class="return-link" href="#achievements-heading">&#8593; All achievements</a>
+      <section class="evidence-panel" role="tabpanel" id="frc-team-365" aria-labelledby="tab-frc-team-365" tabindex="0">
+        <h2>FIRST Robotics Competition — Team 365</h2>
         <p>FRC Team 365 — Miracle Workerz / MOE Robotics Group. FIRST lists the team in Wilmington, Delaware and identifies it as a FIRST Robotics Competition Hall of Fame team. <a href="https://frc-events.firstinspires.org/team/365">Official FIRST Team 365 information</a> · <a href="https://www.moe365.net/">MOE Robotics official site</a>.</p>
         <ul class="evidence-list">
           <li><strong>My involvement (self-reported):</strong> second year with the team; programming, autonomous systems, camera systems, and sensor integration.</li>
@@ -38,10 +49,9 @@
           <img src="https://lh7-us.googleusercontent.com/sitesv-images-rt/AMxu72sIYRIqQaExO7p4l4J8QHVs9RfxYrASIcoUxdfq9tEfKhKg06ALn0V7VuBc7ek_t5_4t-xTbCXY7TyGWatDty0Wa0UV7cR4Yxnw21q-fU-j7dgIr_B1iKwO3quEdtJ5j8TIqxkXIvg2oXH-EEnLLeBG-4pyxidkcQhoXtNoYptMAktLw2UOTAaGiJELg4jaFE0C9tddcJZOiErOhXLZoM5kBGEIRm5xCJmt1lRTRs8=w1280" alt="MOE Team 365 at Hatboro-Horsham in 2022" loading="lazy">
           <figcaption>Team 365 team photo. The official MOE history page captions it “MOE at Hatboro-Horsham in 2022.” <a href="https://www.moe365.net/history">Photo source: MOE Robotics history</a>.</figcaption>
         </figure>
-      </article>
-
-      <article class="entry">
-        <h3>VEX Robotics — Team 19709V</h3>
+      </section>
+      <section class="evidence-panel" role="tabpanel" id="vex-team-19709v" aria-labelledby="tab-vex-team-19709v" tabindex="0">
+        <h2>VEX Robotics — Team 19709V</h2>
         <p>The team number and role below are self-reported. I could not verify a public RobotEvents team listing or member roster for this team in the sources checked.</p>
         <ul class="evidence-list">
           <li><strong>My role (self-reported):</strong> main programmer; autonomous and robot programming.</li>
@@ -50,78 +60,63 @@
           <li><strong>Code:</strong> <span class="placeholder">[VEX CODE REPOSITORY TO ADD]</span></li>
           <li><strong>Autonomous evidence:</strong> <span class="placeholder">[VEX AUTONOMOUS VIDEO / EVIDENCE TO ADD]</span></li>
         </ul>
-      </article>
-    </section>
-
-    <section id="projects" aria-labelledby="projects-title">
-      <h2 id="projects-title">Projects</h2>
-
-      <article class="entry">
-        <h3>Autonomous Garden Rover</h3>
+      </section>
+      <section class="evidence-panel" role="tabpanel" id="garden-rover" aria-labelledby="tab-garden-rover" tabindex="0">
+        <h2>Autonomous Garden Rover</h2>
         <p>The public repository documents a garden rover and includes firmware, CAD, schematics, and project pictures. Its README describes autonomous function using an IMU and wheel encoders. My primary focus was software/programming and autonomous-system development (self-reported).</p>
         <p class="links"><a href="https://github.com/GuzziFlipFlops/Autonomous-Garden-Management-System">GitHub repository</a> · <a href="https://github.com/GuzziFlipFlops/Autonomous-Garden-Management-System/tree/main/pictures">Project pictures</a> · <a href="https://macondo.hackclub.com/projects/9276">Macondo project page</a> · <a href="https://youtu.be/P-olpegfmmU">Project demo</a></p>
         <p><strong>Autonomous test video:</strong> <span class="placeholder">[AUTONOMOUS TEST VIDEO TO ADD]</span></p>
-      </article>
-
-      <article class="entry">
-        <h3>Garden Soil Health Sampling Robot</h3>
+      </section>
+      <section class="evidence-panel" role="tabpanel" id="soil-health-robot" aria-labelledby="tab-soil-health-robot" tabindex="0">
+        <h2>Garden Soil Health Sampling Robot</h2>
         <p>The repository README calls this a prototype plant-health rover. It documents soil electrical-conductivity measurement, environmental sensors, ultrasonic ranging, and ESP32 flash data logging; the repository also contains prototype pictures and schematics.</p>
         <p class="links"><a href="https://github.com/GuzziFlipFlops/ESP32-ARM-ROBOT">GitHub repository</a> · <a href="https://github.com/GuzziFlipFlops/ESP32-ARM-ROBOT/tree/main/Pictures">Prototype pictures</a> · <a href="https://www.youtube.com/shorts/W9_TdJyh92A">Demo video</a> · <a href="https://macondo.hackclub.com/projects/9526">Macondo project page</a></p>
-      </article>
-
-      <article class="entry">
-        <h3>FPV Claw Grabbing Drone</h3>
+      </section>
+      <section class="evidence-panel" role="tabpanel" id="fpv-drone" aria-labelledby="tab-fpv-drone" tabindex="0">
+        <h2>FPV Claw Grabbing Drone</h2>
         <p><a href="https://macondo.hackclub.com/projects/9527">Macondo project page</a>. I did not find a public repository or separate photo/video evidence confidently tied to this project.</p>
         <p><strong>Code:</strong> <span class="placeholder">[GITHUB REPOSITORY TO ADD]</span></p>
         <p><strong>Photos/video:</strong> <span class="placeholder">[PROJECT PHOTOS/VIDEO TO ADD]</span></p>
-      </article>
-
-      <article class="entry">
-        <h3>Bipedal Robot / Humanoid Development</h3>
+      </section>
+      <section class="evidence-panel" role="tabpanel" id="bipedal-robot" aria-labelledby="tab-bipedal-robot" tabindex="0">
+        <h2>Bipedal Robot / Humanoid Development</h2>
         <p><a href="https://macondo.hackclub.com/projects/9676">Macondo project page: Bipedal Robot Ankle System</a>.</p>
         <p><strong>Related repository:</strong> <span class="placeholder">[GITHUB REPOSITORY TO ADD]</span></p>
-        <h4>Humanoid Reinforcement Learning</h4>
+      </section>
+      <section class="evidence-panel" role="tabpanel" id="humanoid-learning" aria-labelledby="tab-humanoid-learning" tabindex="0">
+        <h2>Humanoid Reinforcement Learning</h2>
         <p>Current focus (self-reported): NVIDIA Isaac Lab and reinforcement learning for humanoid behavior and training. No completed training result is claimed here.</p>
         <ul class="evidence-list">
           <li><span class="placeholder">[ISAAC LAB GITHUB REPOSITORY TO ADD]</span></li>
           <li><span class="placeholder">[TRAINING VIDEO / SIMULATION SCREENSHOT TO ADD]</span></li>
           <li><span class="placeholder">[PHYSICAL HUMANOID EVIDENCE TO ADD]</span></li>
         </ul>
-      </article>
-    </section>
-
-    <section id="software" aria-labelledby="software-title">
-      <h2 id="software-title">Other software projects</h2>
-
-      <article class="entry">
-        <h3>iOS Accessibility App — TSA Software Development</h3>
+      </section>
+      <section class="evidence-panel" role="tabpanel" id="ios-accessibility" aria-labelledby="tab-ios-accessibility" tabindex="0">
+        <h2>iOS Accessibility App — TSA Software Development</h2>
         <p>Purpose and results are self-reported: an iOS app designed for people with disabilities; 1st at state level and 6th nationally. The public Swift/Xcode repository is a shared project source; its contributor history lists GuzziFlipFlops.</p>
         <p class="links"><a href="https://github.com/GuzziFlipFlops/TSA-Software-Development-2026-MOT">Project repository</a> · <a href="https://github.com/GuzziFlipFlops/TSA-Software-Development-2026-MOT/graphs/contributors">GitHub contributor history</a></p>
         <p><strong>TSA results:</strong> <span class="placeholder">[TSA RESULTS EVIDENCE TO ADD]</span></p>
         <p><strong>App screenshots:</strong> <span class="placeholder">[APP SCREENSHOTS TO ADD]</span></p>
-      </article>
-
-      <article class="entry">
-        <h3>Unity Game Development — TSA Video Game Design</h3>
+      </section>
+      <section class="evidence-panel" role="tabpanel" id="unity-game" aria-labelledby="tab-unity-game" tabindex="0">
+        <h2>Unity Game Development — TSA Video Game Design</h2>
         <p>The repository describes <em>Ball Run</em>, a 2–3 player Unity racing/puzzle game. Its README reports 3rd place at TSA states; an official result link is still needed.</p>
         <p class="links"><a href="https://github.com/GuzziFlipFlops/TSA-VDG-DESIGN-2024-2025">Project repository</a> · <a href="https://play.unity.com/en/games/d0dbe488-c372-42b7-9828-a600288dbc93/ball-run">Play Ball Run</a></p>
         <p><strong>TSA result:</strong> <span class="placeholder">[TSA RESULT LINK TO ADD]</span></p>
         <p><strong>Game screenshots:</strong> <span class="placeholder">[GAME SCREENSHOTS TO ADD]</span></p>
-      </article>
-
-      <article class="entry">
-        <h3>Apple Swift Student Challenge</h3>
+      </section>
+      <section class="evidence-panel" role="tabpanel" id="swift-challenge" aria-labelledby="tab-swift-challenge" tabindex="0">
+        <h2>Apple Swift Student Challenge</h2>
         <p>No project description or winner evidence was verified in the repositories checked.</p>
         <ul class="evidence-list">
           <li><span class="placeholder">[PROJECT DESCRIPTION TO ADD]</span></li>
           <li><span class="placeholder">[SWIFT STUDENT CHALLENGE PROJECT REPOSITORY TO ADD]</span></li>
           <li><span class="placeholder">[APPLE WINNER EVIDENCE TO ADD]</span></li>
         </ul>
-      </article>
-    </section>
-
-    <section id="code" aria-labelledby="code-title">
-      <h2 id="code-title">Code / GitHub</h2>
+      </section>
+      <section class="evidence-panel" role="tabpanel" id="code-github" aria-labelledby="tab-code-github" tabindex="0">
+        <h2>Code / GitHub</h2>
       <ul class="repo-list">
         <li><a href="https://github.com/GuzziFlipFlops/Autonomous-Garden-Management-System">Autonomous-Garden-Management-System</a> — garden rover repository with firmware, CAD, schematics, and pictures.</li>
         <li><a href="https://github.com/GuzziFlipFlops/ESP32-ARM-ROBOT">ESP32-ARM-ROBOT</a> — soil-health rover prototype repository with CAD, schematics, and prototype pictures.</li>
@@ -129,7 +124,8 @@
         <li><a href="https://github.com/GuzziFlipFlops/TSA-VDG-DESIGN-2024-2025">TSA-VDG-DESIGN-2024-2025</a> — <em>Ball Run</em> project overview and playable build link.</li>
         <!-- Add additional confirmed project repositories below this line. -->
       </ul>
-    </section>
+      </section>
+    </div>
   </main>
 
   <footer class="wrap page-footer">
