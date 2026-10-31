@@ -61,6 +61,7 @@ h1 { max-width: 950px; margin: 0; font-size: clamp(1.45rem, 2.6vw, 2rem); line-h
 .return-link { display: none; margin-bottom: .8rem; font-size: .9rem; }
 .evidence-panel h2 { margin: 0 0 .8rem; font-size: 1.35rem; line-height: 1.35; }
 .evidence-panel h3 { margin: 1rem 0 .4rem; font-size: 1.05rem; }
+.proof-group + .proof-group { margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid #e4e8ee; }
 p { margin: .45rem 0 .85rem; }
 .evidence-list { margin: .6rem 0 1rem; padding-left: 1.3rem; }
 .evidence-list li { margin: .45rem 0; }
